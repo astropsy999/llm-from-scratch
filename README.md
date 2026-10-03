@@ -4,14 +4,14 @@
 
 - Статьи: [stuzhuk.page](https://stuzhuk.page/ru/blog/) / [stuzhuklab.ru](https://stuzhuklab.ru/blog/) (серия `llm-from-scratch`)
 - Состояние после каждого урока — **git-тег** `lesson-01`, `lesson-02`, …
-- Актуальный снимок: [`lesson-07`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-07)
+- Актуальный снимок: [`lesson-08`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-08)
 
 ## Быстрый старт
 
 ```bash
 git clone https://github.com/astropsy999/llm-from-scratch.git
 cd llm-from-scratch
-git checkout lesson-07
+git checkout lesson-08
 
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\Activate.ps1
@@ -85,6 +85,15 @@ python src/train_char_model.py
 ```
 
 Подробнее: [`lessons/07.md`](lessons/07.md).
+
+### Урок 8 — loss и CrossEntropy
+
+```bash
+python src/understand_loss.py
+python src/train_char_model.py
+```
+
+Подробнее: [`lessons/08.md`](lessons/08.md).
 
 ## Структура
 

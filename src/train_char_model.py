@@ -82,6 +82,7 @@ def main():
 
     print("=== 2. Старт обучения ===")
     model.train()
+    loss_history: list[float] = []
     for epoch in range(150):
         total_loss = 0.0
         for x_batch, y_batch in dataloader:
@@ -95,8 +96,15 @@ def main():
             optimizer.step()
             total_loss += loss.item()
 
+        avg_loss = total_loss / len(dataloader)
+        loss_history.append(avg_loss)
         if epoch % 30 == 0:
-            print(f"Epoch {epoch:3d} | Loss: {total_loss / len(dataloader):.4f}")
+            print(f"Epoch {epoch:3d} | Loss: {avg_loss:.4f}")
+
+    print("\n=== График падения Loss ===")
+    for i in range(0, len(loss_history), 15):
+        bars = "█" * int(loss_history[i] * 5)
+        print(f"Epoch {i:3d} | Loss: {loss_history[i]:.4f} | {bars}")
 
     print("\n=== 3. Генерация ПОСЛЕ обучения ===")
     print(f"Промпт: '{prompt}' -> Результат: '{generate_text(model, dataset, prompt)}'\n")
