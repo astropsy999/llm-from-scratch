@@ -4,14 +4,14 @@
 
 - Статьи: [stuzhuk.page](https://stuzhuk.page/ru/blog/) / [stuzhuklab.ru](https://stuzhuklab.ru/blog/) (серия `llm-from-scratch`)
 - Состояние после каждого урока — **git-тег** `lesson-01`, `lesson-02`, …
-- Актуальный снимок: [`lesson-10`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-10)
+- Актуальный снимок: [`lesson-11`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-11)
 
 ## Быстрый старт
 
 ```bash
 git clone https://github.com/astropsy999/llm-from-scratch.git
 cd llm-from-scratch
-git checkout lesson-10
+git checkout lesson-11
 
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\Activate.ps1
@@ -110,6 +110,14 @@ python src/attention_from_scratch.py
 ```
 
 Подробнее: [`lessons/10.md`](lessons/10.md).
+
+### Урок 11 — причинное внимание
+
+```bash
+python src/causal_attention.py
+```
+
+Подробнее: [`lessons/11.md`](lessons/11.md).
 
 ## Структура
 
