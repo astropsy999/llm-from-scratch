@@ -4,14 +4,14 @@
 
 - Статьи: [stuzhuk.page](https://stuzhuk.page/ru/blog/) / [stuzhuklab.ru](https://stuzhuklab.ru/blog/) (серия `llm-from-scratch`)
 - Состояние после каждого урока — **git-тег** `lesson-01`, `lesson-02`, …
-- Актуальный снимок: [`lesson-12`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-12)
+- Актуальный снимок: [`lesson-13`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-13)
 
 ## Быстрый старт
 
 ```bash
 git clone https://github.com/astropsy999/llm-from-scratch.git
 cd llm-from-scratch
-git checkout lesson-12
+git checkout lesson-13
 
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\Activate.ps1
@@ -126,6 +126,14 @@ python src/multi_head_attention.py
 ```
 
 Подробнее: [`lessons/12.md`](lessons/12.md).
+
+### Урок 13 — Transformer Block
+
+```bash
+cd src && python transformer_block.py
+```
+
+Подробнее: [`lessons/13.md`](lessons/13.md).
 
 ## Структура
 
