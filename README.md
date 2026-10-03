@@ -4,14 +4,14 @@
 
 - Статьи: [stuzhuk.page](https://stuzhuk.page/ru/blog/) / [stuzhuklab.ru](https://stuzhuklab.ru/blog/) (серия `llm-from-scratch`)
 - Состояние после каждого урока — **git-тег** `lesson-01`, `lesson-02`, …
-- Актуальный снимок: [`lesson-05`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-05)
+- Актуальный снимок: [`lesson-06`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-06)
 
 ## Быстрый старт
 
 ```bash
 git clone https://github.com/astropsy999/llm-from-scratch.git
 cd llm-from-scratch
-git checkout lesson-05
+git checkout lesson-06
 
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\Activate.ps1
@@ -64,6 +64,19 @@ python src/benchmark_formats.py
 ```
 
 Подробнее: [`lessons/05.md`](lessons/05.md).
+
+### Урок 6 — шарды
+
+```bash
+python src/create_shards.py \
+  --input data/processed/train.jsonl \
+  --output data/shards/train \
+  --shard-size 2
+python src/read_shards.py
+python src/verify_shards.py
+```
+
+Подробнее: [`lessons/06.md`](lessons/06.md).
 
 ## Структура
 

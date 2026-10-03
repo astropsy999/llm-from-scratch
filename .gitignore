@@ -13,6 +13,8 @@ data/*
 !data/parquet/**
 !data/webdataset/
 !data/webdataset/**
+!data/shards/
+!data/shards/**
 notebooks/*
 !notebooks/.gitkeep
 experiments/*.json
