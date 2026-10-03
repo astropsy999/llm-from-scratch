@@ -4,14 +4,14 @@
 
 - Статьи: [stuzhuk.page](https://stuzhuk.page/ru/blog/) / [stuzhuklab.ru](https://stuzhuklab.ru/blog/) (серия `llm-from-scratch`)
 - Состояние после каждого урока — **git-тег** `lesson-01`, `lesson-02`, …
-- Актуальный снимок: [`lesson-14`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-14)
+- Актуальный снимок: [`lesson-15`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-15)
 
 ## Быстрый старт
 
 ```bash
 git clone https://github.com/astropsy999/llm-from-scratch.git
 cd llm-from-scratch
-git checkout lesson-14
+git checkout lesson-15
 
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\Activate.ps1
@@ -142,6 +142,14 @@ python train_gpt.py
 ```
 
 Подробнее: [`lessons/14.md`](lessons/14.md).
+
+### Урок 15 — pretrain GPT
+
+```bash
+python src/pretrain_gpt.py
+```
+
+Подробнее: [`lessons/15.md`](lessons/15.md).
 
 ## Структура
 
