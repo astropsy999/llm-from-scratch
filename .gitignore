@@ -5,6 +5,10 @@ __pycache__/
 data/*
 !data/.gitkeep
 !data/tokenizer_corpus.txt
+!data/raw/
+!data/raw/**
+!data/processed/
+!data/processed/**
 notebooks/*
 !notebooks/.gitkeep
 experiments/*.json

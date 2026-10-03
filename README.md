@@ -4,14 +4,14 @@
 
 - Статьи: [stuzhuk.page](https://stuzhuk.page/ru/blog/) / [stuzhuklab.ru](https://stuzhuklab.ru/blog/) (серия `llm-from-scratch`)
 - Состояние после каждого урока — **git-тег** `lesson-01`, `lesson-02`, …
-- Актуальный снимок: [`lesson-03`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-03)
+- Актуальный снимок: [`lesson-04`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-04)
 
 ## Быстрый старт
 
 ```bash
 git clone https://github.com/astropsy999/llm-from-scratch.git
 cd llm-from-scratch
-git checkout lesson-03
+git checkout lesson-04
 
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\Activate.ps1
@@ -45,6 +45,14 @@ python src/test_tokenizer.py
 ```
 
 Подробнее: [`lessons/03.md`](lessons/03.md).
+
+### Урок 4 — датасет и JSONL
+
+```bash
+python src/prepare_dataset.py
+```
+
+Подробнее: [`lessons/04.md`](lessons/04.md).
 
 ## Структура
 
