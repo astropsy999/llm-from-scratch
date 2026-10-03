@@ -4,7 +4,9 @@ __pycache__/
 .DS_Store
 data/*
 !data/.gitkeep
+!data/tokenizer_corpus.txt
 notebooks/*
 !notebooks/.gitkeep
 experiments/*.json
 experiments/*.csv
+tokenizer/tokenizer_v*.json
