@@ -20,3 +20,7 @@ notebooks/*
 experiments/*.json
 experiments/*.csv
 tokenizer/tokenizer_v*.json
+checkpoints/*
+!checkpoints/.gitkeep
+!checkpoints/char_model.pt
+

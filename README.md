@@ -4,14 +4,14 @@
 
 - Статьи: [stuzhuk.page](https://stuzhuk.page/ru/blog/) / [stuzhuklab.ru](https://stuzhuklab.ru/blog/) (серия `llm-from-scratch`)
 - Состояние после каждого урока — **git-тег** `lesson-01`, `lesson-02`, …
-- Актуальный снимок: [`lesson-06`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-06)
+- Актуальный снимок: [`lesson-07`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-07)
 
 ## Быстрый старт
 
 ```bash
 git clone https://github.com/astropsy999/llm-from-scratch.git
 cd llm-from-scratch
-git checkout lesson-06
+git checkout lesson-07
 
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\Activate.ps1
@@ -78,6 +78,14 @@ python src/verify_shards.py
 
 Подробнее: [`lessons/06.md`](lessons/06.md).
 
+### Урок 7 — символьная модель
+
+```bash
+python src/train_char_model.py
+```
+
+Подробнее: [`lessons/07.md`](lessons/07.md).
+
 ## Структура
 
 ```text
@@ -85,6 +93,7 @@ src/            скрипты уроков
 experiments/    замеры
 data/           корпуса и данные
 tokenizer/      сохранённый tokenizer.json
+checkpoints/    веса моделей
 notebooks/      черновики
 lessons/        заметки по каждому уроку
 ```
