@@ -4,14 +4,14 @@
 
 - Статьи: [stuzhuk.page](https://stuzhuk.page/ru/blog/) / [stuzhuklab.ru](https://stuzhuklab.ru/blog/) (серия `llm-from-scratch`)
 - Состояние после каждого урока — **git-тег** `lesson-01`, `lesson-02`, …
-- Актуальный снимок: [`lesson-11`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-11)
+- Актуальный снимок: [`lesson-12`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-12)
 
 ## Быстрый старт
 
 ```bash
 git clone https://github.com/astropsy999/llm-from-scratch.git
 cd llm-from-scratch
-git checkout lesson-11
+git checkout lesson-12
 
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\Activate.ps1
@@ -118,6 +118,14 @@ python src/causal_attention.py
 ```
 
 Подробнее: [`lessons/11.md`](lessons/11.md).
+
+### Урок 12 — многоголовое внимание
+
+```bash
+python src/multi_head_attention.py
+```
+
+Подробнее: [`lessons/12.md`](lessons/12.md).
 
 ## Структура
 
