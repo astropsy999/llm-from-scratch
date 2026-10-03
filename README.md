@@ -4,14 +4,14 @@
 
 - Статьи: [stuzhuk.page](https://stuzhuk.page/ru/blog/) / [stuzhuklab.ru](https://stuzhuklab.ru/blog/) (серия `llm-from-scratch`)
 - Состояние после каждого урока — **git-тег** `lesson-01`, `lesson-02`, …
-- Актуальный снимок: [`lesson-04`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-04)
+- Актуальный снимок: [`lesson-05`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-05)
 
 ## Быстрый старт
 
 ```bash
 git clone https://github.com/astropsy999/llm-from-scratch.git
 cd llm-from-scratch
-git checkout lesson-04
+git checkout lesson-05
 
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\Activate.ps1
@@ -53,6 +53,17 @@ python src/prepare_dataset.py
 ```
 
 Подробнее: [`lessons/04.md`](lessons/04.md).
+
+### Урок 5 — форматы JSONL / Parquet / WebDataset
+
+```bash
+python src/convert_to_parquet.py
+python src/convert_to_webdataset.py
+python src/verify_formats.py
+python src/benchmark_formats.py
+```
+
+Подробнее: [`lessons/05.md`](lessons/05.md).
 
 ## Структура
 

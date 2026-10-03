@@ -9,6 +9,10 @@ data/*
 !data/raw/**
 !data/processed/
 !data/processed/**
+!data/parquet/
+!data/parquet/**
+!data/webdataset/
+!data/webdataset/**
 notebooks/*
 !notebooks/.gitkeep
 experiments/*.json
