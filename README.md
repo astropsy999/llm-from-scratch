@@ -4,14 +4,14 @@
 
 - Статьи: [stuzhuk.page](https://stuzhuk.page/ru/blog/) / [stuzhuklab.ru](https://stuzhuklab.ru/blog/) (серия `llm-from-scratch`)
 - Состояние после каждого урока — **git-тег** `lesson-01`, `lesson-02`, …
-- Актуальный снимок: [`lesson-09`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-09)
+- Актуальный снимок: [`lesson-10`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-10)
 
 ## Быстрый старт
 
 ```bash
 git clone https://github.com/astropsy999/llm-from-scratch.git
 cd llm-from-scratch
-git checkout lesson-09
+git checkout lesson-10
 
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\Activate.ps1
@@ -102,6 +102,14 @@ python src/train_tiny_lm.py
 ```
 
 Подробнее: [`lessons/09.md`](lessons/09.md).
+
+### Урок 10 — Attention руками
+
+```bash
+python src/attention_from_scratch.py
+```
+
+Подробнее: [`lessons/10.md`](lessons/10.md).
 
 ## Структура
 
