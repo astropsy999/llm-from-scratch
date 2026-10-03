@@ -4,14 +4,14 @@
 
 - Статьи: [stuzhuk.page](https://stuzhuk.page/ru/blog/) / [stuzhuklab.ru](https://stuzhuklab.ru/blog/) (серия `llm-from-scratch`)
 - Состояние после каждого урока — **git-тег** `lesson-01`, `lesson-02`, …
-- Актуальный снимок: [`lesson-13`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-13)
+- Актуальный снимок: [`lesson-14`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-14)
 
 ## Быстрый старт
 
 ```bash
 git clone https://github.com/astropsy999/llm-from-scratch.git
 cd llm-from-scratch
-git checkout lesson-13
+git checkout lesson-14
 
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\Activate.ps1
@@ -134,6 +134,14 @@ cd src && python transformer_block.py
 ```
 
 Подробнее: [`lessons/13.md`](lessons/13.md).
+
+### Урок 14 — собираем GPT
+
+```bash
+python train_gpt.py
+```
+
+Подробнее: [`lessons/14.md`](lessons/14.md).
 
 ## Структура
 
