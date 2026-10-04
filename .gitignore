@@ -19,6 +19,7 @@ notebooks/*
 !notebooks/.gitkeep
 experiments/*.json
 experiments/*.csv
+experiments/gpt-small/
 tokenizer/tokenizer_v*.json
 checkpoints/*
 !checkpoints/.gitkeep

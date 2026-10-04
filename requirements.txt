@@ -3,3 +3,5 @@ tokenizers
 pyarrow
 pandas
 webdataset
+PyYAML
+matplotlib
