@@ -4,14 +4,14 @@
 
 - Статьи: [stuzhuk.page](https://stuzhuk.page/ru/blog/) / [stuzhuklab.ru](https://stuzhuklab.ru/blog/) (серия `llm-from-scratch`)
 - Состояние после каждого урока — **git-тег** `lesson-01`, `lesson-02`, …
-- Актуальный снимок: [`lesson-16`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-16)
+- Актуальный снимок: [`lesson-17`](https://github.com/astropsy999/llm-from-scratch/tree/lesson-17)
 
 ## Быстрый старт
 
 ```bash
 git clone https://github.com/astropsy999/llm-from-scratch.git
 cd llm-from-scratch
-git checkout lesson-16
+git checkout lesson-17
 
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\Activate.ps1
@@ -158,6 +158,14 @@ python src/train.py --config configs/gpt-small.yaml
 ```
 
 Подробнее: [`lessons/16.md`](lessons/16.md).
+
+### Урок 17 — диагностика обучения
+
+```bash
+python src/diagnose_training.py --config configs/gpt-diag.yaml
+```
+
+Подробнее: [`lessons/17.md`](lessons/17.md).
 
 ## Структура
 
