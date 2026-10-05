@@ -27,3 +27,4 @@ checkpoints/*
 !checkpoints/tiny_lm.pt
 
 
+experiments/precision/

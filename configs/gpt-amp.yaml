@@ -1,0 +1,28 @@
+seed: 42
+experiment_name: amp-benchmark
+
+model:
+  vocab_size: 300
+  block_size: 32
+  num_layers: 2
+  num_heads: 4
+  embed_dim: 64
+  use_rope: true
+  rope_theta: 10000.0
+
+training:
+  batch_size: 4
+  learning_rate: 0.0003
+  num_steps: 30
+  eval_interval: 30
+  eval_steps: 1
+  checkpoint_interval: 30
+  gradient_clip: 1.0
+  early_stopping:
+    enabled: false
+    patience: 5
+
+data:
+  train_path: data/processed/train.jsonl
+  validation_path: data/processed/validation.jsonl
+  tokenizer_path: tokenizer/tokenizer.json
